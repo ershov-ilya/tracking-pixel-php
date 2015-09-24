@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*)\.tp\.(gif|png)(.*)$ $1.pixel.php$3 [L,QSA]
